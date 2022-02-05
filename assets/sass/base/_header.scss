@@ -48,15 +48,6 @@
     @media (max-width: 767px) {
       padding: 11px 20px;
     }
-    &::after {
-      position: absolute;
-      content: "";
-      bottom: 0;
-      left: 0;
-      width: calc(100% - 0%);
-      height: 1px;
-      background: rgba(155, 155, 155, 0.365);
-    }
   }
   .navbar-nav {
     align-items: center;
@@ -71,20 +62,7 @@
         position: relative;
         &.btn {
           color: #fff;
-          @include bd-radius(25px);
-        }
-        &::after {
-          position: absolute;
-          content: "";
-          bottom: -33px;
-          left: 0;
-          width: 100%;
-          height: 2px;
-          background: $color-greeen;
-          opacity: 0;
-          @media (max-width: 991px) {
-            bottom: -5px;
-          }
+          @include border-radius(25px);
         }
         &.active {
           color: $color-greeen;

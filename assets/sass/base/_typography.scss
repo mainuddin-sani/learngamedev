@@ -8,11 +8,10 @@
 @import "./variable";
 
 /**Font Size & Font Family**/
+@import url(../../fonts/text-fonts/agency-fb.ttf);
 body {
-  background: $color-dark url(../images/Asset-1bg1-1.png) 0 9% no-repeat;
-  @media (max-width: 1440px) {
-    background: $color-dark url(../images/Asset-1bg1-1.png) 0 31% no-repeat;
-  }
+  font-family: 'Roboto', sans-serif;
+  background-color: $color-dark;
 }
 
 h1,
@@ -36,6 +35,7 @@ h2 {
   @media #{$max991} {
     font-size: 28px;
   }
+  font-family: "Agency FB";
   span {
     @extend h2;
   }
@@ -152,11 +152,28 @@ ol {
     list-style-type: none;
   }
 }
+label {
+  color: #fff;
+  font-weight: 500;
+}
 .btn,
 button {
   padding: 14px 16px !important;
   line-height: 21px;
+  background-color: $color-primary;
+  color: #fff;
+  @include border-radius(5px);
   &:focus {
     box-shadow: none;
+  }
+}
+
+.form-control {
+  height: 50px;
+}
+.cc-heading {
+  h2 {
+    text-transform: uppercase;
+    font-weight: 700;
   }
 }

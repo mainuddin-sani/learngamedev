@@ -167,6 +167,14 @@ button {
     box-shadow: none;
   }
 }
+.btn-yellow {
+  @extend .btn;
+  background-color: #FFD300;
+  &:hover {
+    color: #000;
+  }
+}
+
 
 .form-control {
   height: 50px;

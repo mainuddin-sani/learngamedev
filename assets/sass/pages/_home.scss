@@ -30,14 +30,119 @@
 }
 
 .cc-your-geals-content {
+  padding-top: 30px;
   ul {
     li {
+      &:not(:last-child){
+        padding-bottom: 20px;
+      }
       .cc-your-goals {
+        &.active {
+          padding: 20px;
         background-color: #fff;
         h5 {
-          color: #fff;
+          color: #000;
+        }
+        }
+      }
+      h5 {
+        font-weight: 700;
+      }
+    }
+  }
+}
+.cc-job-post {
+  .cc-jobs-items {
+    position: relative;
+    background-color: #fff;
+    padding: 20px 20px 50px 20px;
+    .carrer-path {
+      letter-spacing: 2px;
+    }
+    h5 {
+      color: #000;
+    }
+    .bg-black {
+      background-color: #000;
+      color: #fff;
+      padding: 5px;
+    }
+    .foundations {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 5px;
+      background-color: #f5f5f5;
+    }
+    ul {
+      li {
+        p {
+          i {
+            padding-right: 5px;
+            color: #000;
+          }
         }
       }
     }
   }
+}
+.browser {
+  color: $color-primary;
+  margin-top: 10px;
+  &:hover {
+    color: $color-primary;
+  }
+}
+.cc-start-for-img {
+  @include d-flex();
+  grid-gap: 20px;
+}
+
+.circle-shape-images {
+  @include border-radius(30px 0 0 0);
+  max-width: 200px;
+  height: 200px;
+}
+.circle-images {
+  @include border-radius(50%);
+  max-width: 200px;
+  height: 200px;
+}
+.cc-start-for-heads {
+  background-color: #3A10E5;
+}
+
+.footer-menu {
+  @include d-flex();
+  justify-content: end;
+  align-items: center;
+  grid-gap: 20px;
+  li {
+    a {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
+.mt60 {
+  margin-top: 60px;
+  text-align: right;
+  p {
+    color: #fff;
+  }
+}
+
+.cc-footer-heads {
+  background-image: linear-gradient(rgb(49, 47, 80),rgba(49, 47, 80, 0.329)), url(../images/footer-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+ padding-top: 80px;
+}
+
+.cc-last-footer {
+  margin-top: 60px;
+  padding: 30px 20px;
+  border-top: 1px solid rgba(194, 212, 248, 0.4);
 }

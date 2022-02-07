@@ -847,15 +847,12 @@ button {
   .cc-job-post .cc-jobs-items ul li p {
     font-size: 12px; }
   .cc-job-post .cc-jobs-items.bg-1 {
-    background-image: url(/assets/images/web-development.svg);
     background-repeat: no-repeat;
     background-position: right center; }
   .cc-job-post .cc-jobs-items.bg-2 {
-    background-image: url(/assets/images/data-science.svg);
     background-repeat: no-repeat;
     background-position: right center; }
   .cc-job-post .cc-jobs-items.bg-3 {
-    background-image: url(/assets/images/computer-science.svg);
     background-repeat: no-repeat;
     background-position: right center; }
   .cc-job-post .cc-jobs-items.bg-4 {

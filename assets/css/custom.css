@@ -1,3 +1,31 @@
 /*=============================================================================
      Any custom css you want to apply should be defined here
 ==============================================================================*/
+.cc-jobs-items:hover {
+     -webkit-transform: translate(4px, -4px);
+    -moz-transform: translate(4px, -4px);
+    -ms-transform: translate(4px, -4px);
+    transform: translate(4px, -4px);
+    box-shadow: -8px 8px 0 #7c69e3;
+    transition: .3s;
+}
+.cc-your-goals {
+     background-color: transparent;
+     border: none;
+     width: 100%;
+     text-align: left;
+     background-color: #fff;
+     color: #000;
+     font-family: 'Roboto', sans-serif;
+     font-size: 24px;
+     line-height: 130%;
+     font-weight: 700;
+     border-radius: 0;
+}
+.cc-your-goals.collapsed {
+     background-color: transparent;
+     color: #fff;
+}
+.accordion-body {
+     background-color: #fff;
+}

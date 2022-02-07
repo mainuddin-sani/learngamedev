@@ -974,7 +974,10 @@ button {
 
 .cc-your-goals.collapsed {
   background-color: transparent;
-  color: #fff; }
+  color: #fff;
+  transition: .3s; }
+  .cc-your-goals.collapsed:hover {
+    font-size: 26px; }
 
 .accordion-body {
   background-color: #fff; }

@@ -210,6 +210,10 @@
 .cc-your-goals.collapsed {
   background-color: transparent;
   color: #fff;
+  transition: .3s;
+  &:hover {
+    font-size: 26px;
+  }
 }
 .accordion-body {
   background-color: #fff;

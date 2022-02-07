@@ -40,9 +40,6 @@ Please DO NOT EDIT THIS JS, you may need to use "custom.js".
 
   // $(".main-sidebar").niceScroll();
 
-  
-
-
   /*========================================
         Menu itemToggle
     ========================================*/
@@ -78,90 +75,15 @@ Please DO NOT EDIT THIS JS, you may need to use "custom.js".
         Email Check All
     ========================================*/
 
-    var a = new StickySidebar('#sidebar', {
-			topSpacing: 20,
-			innerWrapperSelector: '.sidebar__inner'
-		});
-
-
-
-    $(document).on('click', function(event) {
-       if (!$(event.target).closest(".selectBtn").length) {
-           $(".selectDropdown").removeClass("toggle");
-       }
-   });
-
   //  $(".cc_forms_content-items").hide();
-   $('.form-items').on('click', function(){
-    $('.form-items').removeClass('active');
-    $(this).addClass('active');
-    $(".cc_forms_content-items").hide();
-      var id = $(this).data("volume");
+   $('.cc-your-goals').on('click', function(){
+    $(".cc-job-post").hide();
+      var id = $(this).data("link");
       $("#" + id).fadeIn();
    });
 
-   $('.cc_more-btn').on('click', function(){
-      $('.cc_items-toggle-hides').slideToggle();
-      if( $(this).text() === "Show More" ) {
-        $(this).text('Hide');
-      }else {
-        $(this).text('Show More');
-      }
-      
-   });
-
-   $('.cc_select').ddslick({
-      imagePosition: "left",
-      selectText: "Select your favorite social network",
-  });
-   $('.cc_select2').ddslick({
-      imagePosition: "left",
-      selectText: "Select your favorite social network",
-  });
-   $('.cc_select3').ddslick({
-      imagePosition: "left",
-      selectText: "Select your favorite social network",
-  });
-   $('.cc_select4').ddslick({
-      imagePosition: "left",
-      selectText: "Select your favorite social network",
-  });
-   $('.cc_select5').ddslick({
-      imagePosition: "left",
-      selectText: "Select your favorite social network",
-  });
-   $('.cc_select6').ddslick({
-      imagePosition: "left",
-      selectText: "Select your favorite social network",
-  });
-
-  $("#country_selector").countrySelect({
-    preferredCountries: ['ca', 'gb', 'us']
-  });
-
   // slider
-  $('.cc_payment-method-slider').owlCarousel({
-    loop:true,
-    margin:10,
-    dots: false,
-    responsiveClass:true,
-    navText: ["<i class='ri-arrow-left-s-line'></i>","<i class='ri-arrow-right-s-line'></i>"],
-    responsive:{
-        0:{
-            items:2,
-            nav:true
-        },
-        600:{
-            items:3,
-            nav:false
-        },
-        1000:{
-            items:5,
-            nav:true,
-            loop:false
-        }
-    }
-})
+
 
 
 

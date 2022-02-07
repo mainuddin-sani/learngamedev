@@ -52,20 +52,54 @@
   }
 }
 .cc-job-post {
+  &.active {
+    display: block;
+  }
   .cc-jobs-items {
     position: relative;
     background-color: #fff;
-    padding: 20px 20px 50px 20px;
+    padding: 20px 20px 20px 20px;
+    height: 180px;
+    ul {
+      li {
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+    &.bg-1 {
+      background-image: url(/assets/images/web-development.svg);
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
+    &.bg-2 {
+      background-image: url(/assets/images/data-science.svg);
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
+    &.bg-3 {
+      background-image: url(/assets/images/computer-science.svg);
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
+    &.bg-4 {
+      background-image: url(/assets/images/cybersecurity.svg);
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
     .carrer-path {
       letter-spacing: 2px;
+      font-size: 12px;
     }
     h5 {
       color: #000;
+      font-size: 18px;
     }
     .bg-black {
       background-color: #000;
       color: #fff;
       padding: 5px;
+      font-size: 12px;
     }
     .foundations {
       position: absolute;
@@ -73,6 +107,7 @@
       right: 0;
       padding: 5px;
       background-color: #f5f5f5;
+      font-size: 12px;
     }
     ul {
       li {
@@ -117,6 +152,10 @@
   justify-content: end;
   align-items: center;
   grid-gap: 20px;
+  flex-wrap: wrap;
+  @media #{$max767} {
+    margin-top: 30px;
+  }
   li {
     a {
       color: #fff;
@@ -145,4 +184,45 @@
   margin-top: 60px;
   padding: 30px 20px;
   border-top: 1px solid rgba(194, 212, 248, 0.4);
+}
+
+.cc-jobs-items:hover {
+  -webkit-transform: translate(4px, -4px);
+ -moz-transform: translate(4px, -4px);
+ -ms-transform: translate(4px, -4px);
+ transform: translate(4px, -4px);
+ box-shadow: -8px 8px 0 #7c69e3;
+ transition: .3s;
+}
+.cc-your-goals {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  background-color: #fff;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 130%;
+  font-weight: 700;
+  border-radius: 0;
+}
+.cc-your-goals.collapsed {
+  background-color: transparent;
+  color: #fff;
+}
+.accordion-body {
+  background-color: #fff;
+}
+.cc-job-post {
+  display: none;
+}
+.ic-maintain-css {
+  background-color: #fff;
+  padding: 20px;
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
